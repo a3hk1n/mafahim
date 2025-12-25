@@ -1,0 +1,186 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/Times-new-roman-italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MyFont2";
+  src: url("../fonts/fonts/varela.ttf");
+}
+
+.body {
+  display: block;
+  font-family: "MyFont2", serif;
+  background: linear-gradient(to right, #e0e0e0, #eeeeee, #bdbdbd);
+}
+
+.body__container {
+  display: flex;
+  justify-content: space-between;
+}
+/* ACARDION MENU */
+.menu__Container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.menu__Container .menu__List {
+  background: #fff;
+  padding: 0.8rem 0.2rem 0.2rem 0.2rem;
+  border-radius: 5px;
+  width: 20rem;
+  list-style: none;
+  min-height: 100vh;
+}
+.menu__Container .menu__List .list__Item {
+  transition: all 0.3s ease;
+  padding: 0.2rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.menu__Container .menu__List .list__Item:first-child {
+  background-color: #bb1819;
+  font-family: "MyFont", serif;
+}
+
+.menu__Container .menu__List .list__Item:first-child {
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.menu__Container .menu__List .list__Item .item__Title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-radius: 0.4rem;
+}
+
+.menu__Container .menu__List .list__Item .item__Title button {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: "varela";
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.menu__Container .menu__List .list__Item .item__Title .item__Title__Icone1 {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+.menu__Container .menu__List .list__Item .item__Title .item__Title__Icone2 {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+  transition: all 0.3s ease;
+}
+.menu__Container .menu__List .list__Item .item__Text {
+  transition: all 0.3ms ease;
+  height: 0;
+  overflow: hidden;
+}
+.menu__Container .menu__List .list__Item .item__Text .acardion__Menu {
+  margin: 0.2rem 0 0.2rem 7rem;
+  list-style-type: none;
+}
+.menu__Container
+  .menu__List
+  .list__Item
+  .item__Text
+  .acardion__Menu
+  .acardion__Items {
+  min-height: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+  color: #bdbdbd;
+  border-radius: 0.3rem;
+}
+.menu__Container
+  .menu__List
+  .list__Item
+  .item__Text
+  .acardion__Menu
+  .acardion__Items:hover {
+  transition: all 0.3ms ease;
+  font-size: 0.85rem;
+  color: #757575;
+  font-weight: bold;
+}
+.NO_ICONE {
+  margin: 0 auto;
+}
+/* ROTATE ICONE WHENE SHOW ITEMS */
+.menu__Container .menu__List .list__Item.showItems .item__Title__Icone2 {
+  transform: rotate(90deg);
+}
+.information__Container {
+  display: flex;
+  flex-direction: column;
+  width: 68rem;
+  margin: 0 auto;
+}
+.information__Container .nav__Information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #353635;
+  margin-top: 1rem;
+  border-radius: 0.6rem;
+  padding: 0.5rem 0.3rem;
+}
+.information__Container .nav__Information .information__Title {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 1rem 0.8rem;
+}
+.information__Container .nav__Information .information__Icone {
+  margin: 1rem 0.8rem;
+  color: #fff;
+  font-size: 1.1rem;
+}
+.information__Container
+  .nav__Information
+  .information__Icone
+  .power__Icone:hover {
+  cursor: pointer;
+  color: #bb1819;
+}
+
+/* MAIN INFORMATION */
+.information__Container .main__Container {
+  height: 25rem;
+  margin-top: 1rem;
+  background-color: #fff;
+  border-radius: 0.4rem;
+}
+.information__Container .main__Container .main__Title {
+  padding: 0.5rem 0.3rem;
+  background-color: #353635;
+  border-radius: 0.6rem 0.6rem 0 0;
+}
+.information__Container .main__Container .main__Title h3 {
+  padding: 0.5rem 0.8rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.information__Container .main__Container .main__Information {
+}
